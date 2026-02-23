@@ -1,0 +1,19 @@
+{
+  "id": "cremonix-regime-intelligence",
+  "name": "Cremonix Regime Intelligence — BTC/ETH Crypto Trading Signals",
+  "version": "1.0.0",
+  "description": "Know when to trade and when to sit out. Crypto market regime classification and trading signals for Bitcoin (BTC) and Ethereum (ETH). Includes 1h and 4h regime detection across four regimes: Trend_Up, Trend_Down, Chop_Mean_Reversion, Panic_High_Vol — plus delayed high-probability setup alerts from 36 ML models. Use as a pre-trade checklist before executing on Kraken, Binance, OKX, Bybit, or any exchange. Free tier is delayed ~4 hours. Live production feed (no API keys, no execution).",
+  "entry": "index.mjs",
+  "tools": [
+    {
+      "name": "cremonix_free_feed",
+      "description": "Fetch BTC/ETH regime data: regime_1h, regime_4h, and whether a high-probability setup exists (Cremonix ML trading signals). Use for trading bots, dashboards, or automated pre-trade regime filtering. Returns raw JSON.",
+      "inputSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+    },
+    {
+      "name": "cremonix_summary",
+      "description": "Formatted BTC/ETH crypto trading signal summary using SKILL.md templates: prints 1h/4h regimes and either a delayed setup alert (triggered_at, combo_id, regime) or a no-setup discipline message. Built for chat agents and notifications.",
+      "inputSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+    }
+  ]
+}
