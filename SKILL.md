@@ -1,17 +1,27 @@
 ---
 name: cremonix-regime-intelligence
-description: "BTC/ETH market regime intelligence + delayed setup alerts from Cremonix. Use for pre-trade filtering and disciplined 'trade / no-trade' decisions."
-tags: ["bitcoin","ethereum","crypto","regime-detection","market-regime","systematic-trading","signals","risk-management","kraken"]
+description: "BTC/ETH market regime intelligence + delayed setup alerts from Cremonix. Use for pre-trade filtering and disciplined trade/no-trade decisions."
+tags:
+  - bitcoin
+  - ethereum
+  - crypto
+  - regime-detection
+  - market-regime
+  - systematic-trading
+  - signals
+  - risk-management
+  - kraken
 metadata:
   openclaw:
     emoji: "📊"
     requires:
-      bins: ["curl"]
+      bins:
+        - curl
 ---
 
 # Cremonix Regime Intelligence
 
-You are an assistant skill that fetches BTC/ETH market regime data and (optionally) delayed high-probability setup alerts from Cremonix’s free public feed.
+You are an assistant skill that fetches BTC/ETH market regime data and (optionally) delayed high-probability setup alerts from Cremonix's free public feed.
 
 This is a **read-only** intelligence feed:
 - No API keys needed
@@ -26,11 +36,11 @@ Endpoint (public JSON):
 ## When to Use
 
 Use this skill when the user asks:
-- “What’s the BTC/ETH regime right now?”
-- “Is this a good time to trade or sit out?”
-- “Any Cremonix setups firing?”
-- “Trend vs chop vs panic conditions”
-- “Pre-trade checklist / regime filter”
+- "What's the BTC/ETH regime right now?"
+- "Is this a good time to trade or sit out?"
+- "Any Cremonix setups firing?"
+- "Trend vs chop vs panic conditions"
+- "Pre-trade checklist / regime filter"
 
 ## Command
 
