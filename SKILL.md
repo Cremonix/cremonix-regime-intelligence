@@ -1,23 +1,9 @@
 ---
 name: cremonix-regime-intelligence
 description: "BTC/ETH market regime intelligence + delayed setup alerts from Cremonix. Use for pre-trade filtering and disciplined trade/no-trade decisions."
-tags:
-  - bitcoin
-  - ethereum
-  - crypto
-  - regime-detection
-  - market-regime
-  - systematic-trading
-  - signals
-  - risk-management
-  - kraken
-metadata:
-  openclaw:
-    emoji: "📊"
-    requires:
-      bins:
-        - curl
+metadata: { "openclaw": { "emoji": "📊", "requires": { "bins": ["curl"] } } }
 ---
+
 
 # Cremonix Regime Intelligence
 
@@ -48,3 +34,4 @@ Fetch raw JSON:
 
 ```bash
 curl -s "https://blog.cremonix.com/feeds/cremonix-free.json"
+
