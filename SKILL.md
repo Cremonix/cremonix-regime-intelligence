@@ -1,6 +1,6 @@
 ---
 name: cremonix-regime-intelligence
-description: "Know when to trade and when to sit out. Crypto market regime classification and trading signals for Bitcoin (BTC) and Ethereum (ETH). Includes 1h and 4h regime detection across four regimes: Trend_Up, Trend_Down, Chop_Mean_Reversion, Panic_High_Vol — plus delayed high-probability setup alerts from 36 ML models. Use as a pre-trade checklist before executing on Kraken, Binance, OKX, Bybit, or any exchange. Free tier is delayed ~4 hours. Live production feed (no API keys, no execution)."
+description: "Know when to trade and when to sit out. Crypto market regime classification and trading signals for Bitcoin (BTC) and Ethereum (ETH). Includes 1h and 4h regime detection across four regimes: Trend_Up, Trend_Down, Chop_Mean_Reversion, Panic_High_Vol - plus delayed high-probability setup alerts from 36 ML models. Use as a pre-trade checklist before executing on Kraken, Binance, OKX, Bybit, or any exchange. Free tier is delayed ~4 hours. Live production feed (no API keys, no execution)."
 ---
 
 # Cremonix Free Feed
@@ -48,3 +48,4 @@ in this regime — knowing when NOT to trade is the edge.
 Cremonix automates BTC & ETH trading on Kraken.  
 
 Connect your API, it handles the rest. → cremonix.com
+
