@@ -1,43 +1,40 @@
-# Cremonix Free Feed
-
-This skill fetches the public feed:
-https://blog.cremonix.com/feeds/cremonix-free.json
-
-## Tools
-
-### 1) `cremonix_free_feed()`
-Returns the raw JSON payload exactly as published.
-
-### 2) `cremonix_summary()`
-Returns formatted text using the templates below.
-
+---
+name: cremonix-regime-intelligence
+description: "BTC/ETH market regime intelligence + delayed setup alerts from Cremonix. Use for pre-trade filtering and disciplined 'trade / no-trade' decisions."
+tags: ["bitcoin","ethereum","crypto","regime-detection","market-regime","systematic-trading","signals","risk-management","kraken"]
+metadata:
+  openclaw:
+    emoji: "📊"
+    requires:
+      bins: ["curl"]
 ---
 
-## Output Templates
+# Cremonix Regime Intelligence
 
-### When a delayed setup exists
+You are an assistant skill that fetches BTC/ETH market regime data and (optionally) delayed high-probability setup alerts from Cremonix’s free public feed.
 
-BTC Regime (1h): {BTC_REGIME_1H}  
-BTC Regime (4h): {BTC_REGIME_4H}  
-ETH Regime (1h): {ETH_REGIME_1H}  
-ETH Regime (4h): {ETH_REGIME_4H}  
+This is a **read-only** intelligence feed:
+- No API keys needed
+- No trade execution
+- Free tier is delayed (see `delay_hours` in response)
 
-⚡ A high-probability setup fired at {TRIGGERED_AT} (shown with a 4-hour delay) for {COMBO_ID} during {REGIME_AT_TRIGGER} regime.
+## Data Source
 
-Cremonix runs 36 ML models 24/7 and executes automatically on Kraken.  
-Funds never leave your exchange. → cremonix.com
+Endpoint (public JSON):
+- https://blog.cremonix.com/feeds/cremonix-free.json
 
----
+## When to Use
 
-### When no setup exists
+Use this skill when the user asks:
+- “What’s the BTC/ETH regime right now?”
+- “Is this a good time to trade or sit out?”
+- “Any Cremonix setups firing?”
+- “Trend vs chop vs panic conditions”
+- “Pre-trade checklist / regime filter”
 
-BTC Regime (1h): {BTC_REGIME_1H}  
-BTC Regime (4h): {BTC_REGIME_4H}  
-ETH Regime (1h): {ETH_REGIME_1H}  
-ETH Regime (4h): {ETH_REGIME_4H}  
+## Command
 
-No high probability setup currently. Cremonix blocked trading  
-in this regime — knowing when NOT to trade is the edge.
+Fetch raw JSON:
 
-Cremonix automates BTC & ETH trading on Kraken.  
-Connect your API, it handles the rest. → cremonix.com
+```bash
+curl -s "https://blog.cremonix.com/feeds/cremonix-free.json"
