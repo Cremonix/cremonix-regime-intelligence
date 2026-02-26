@@ -1,4 +1,3 @@
-// skills/cremonix-free-feed/index.mjs
 const FEED_URL = "https://blog.cremonix.com/feeds/cremonix-free.json";
 
 // ---- Helpers ----
@@ -52,7 +51,6 @@ function formatSummary(payload) {
   const ctaUrl = payload?.cta?.url || "https://cremonix.com";
   const setupCandidate = pickFirstSetup(payload);
 
-  // -------- TEMPLATE: delayed setup exists --------
   if (setupCandidate) {
     const { symbol, asset } = setupCandidate;
     const setup = asset?.setup || {};
@@ -74,7 +72,6 @@ function formatSummary(payload) {
       payload?.generated_at ??
       "UNKNOWN";
 
-    // “regime at trigger” (prefer 4h, else 1h)
     const regimeAtTrigger = safeStr(asset?.regime_4h ?? asset?.regime_1h);
 
     return [
@@ -83,18 +80,13 @@ function formatSummary(payload) {
       `ETH Regime (1h): ${ethR1}`,
       `ETH Regime (4h): ${ethR4}`,
       ``,
-      `⚡ A high-probability setup fired at ${safeStr(
-        triggeredAt
-      )} (shown with a 4-hour delay) for ${safeStr(
-        comboId
-      )} during ${regimeAtTrigger} regime.`,
+      `⚡ A high-probability setup fired at ${safeStr(triggeredAt)} (shown with a 4-hour delay) for ${safeStr(comboId)} during ${regimeAtTrigger} regime.`,
       ``,
       `Cremonix runs 36 ML models 24/7 and executes automatically on Kraken.`,
       `Funds never leave your exchange. → ${ctaUrl.replace(/\/$/, "")}`,
     ].join("\n");
   }
 
-  // -------- TEMPLATE: no setup exists --------
   return [
     `BTC Regime (1h): ${btcR1}`,
     `BTC Regime (4h): ${btcR4}`,
@@ -109,20 +101,15 @@ function formatSummary(payload) {
   ].join("\n");
 }
 
-// ---- OpenClaw Skill Export ----
-export default function registerSkill() {
-  return {
-    tools: {
-      // raw JSON
-      cremonix_free_feed: async () => {
-        return await fetchJson(FEED_URL);
-      },
-
-      // formatted text
-      cremonix_summary: async () => {
-        const payload = await fetchJson(FEED_URL);
-        return formatSummary(payload);
-      },
+// ✅ Export an object (most compatible)
+export default {
+  tools: {
+    cremonix_free_feed: async () => {
+      return await fetchJson(FEED_URL);
     },
-  };
-}
+    cremonix_summary: async () => {
+      const payload = await fetchJson(FEED_URL);
+      return formatSummary(payload);
+    },
+  },
+};
