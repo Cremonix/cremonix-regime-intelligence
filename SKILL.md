@@ -148,6 +148,10 @@ Cremonix is a systematic BTC/ETH trading platform built from the ground up for r
 
 This is not a side project publishing backtested signals. It is the live intelligence output of a system that puts real capital on the line every day based on these exact classifications and triggers.
 
+## Disclaimer
+
+This skill provides market intelligence for informational purposes only. It is not financial advice. Past performance of the underlying system does not guarantee future results. Always do your own research and never risk more than you can afford to lose. Cremonix is not responsible for trading decisions made based on this data.
+
 ---
 
 Built by Cremonix. Systematic BTC/ETH trading.
