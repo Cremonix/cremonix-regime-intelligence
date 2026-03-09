@@ -59,7 +59,7 @@
   },
   "cta": {
     "url": "https://cremonix.com",
-    "setup_message": "Cremonix runs 36 ML models 24/7 and executes automatically on Kraken. Funds never leave your exchange. 💎 Want real-time signals? Upgrade at app.cremonix.com/api-subscribe",
+    "setup_message": "Cremonix runs multi ML models 24/7 and executes automatically on Kraken. Funds never leave your exchange. 💎 Want real-time signals? Upgrade at app.cremonix.com/api-subscribe",
     "no_setup_message": "No high probability setup currently. Cremonix blocked trading in this regime — knowing when NOT to trade is the edge. 💎 Upgrade to paid tier for real-time signals at app.cremonix.com/api-subscribe"
   }
 }
