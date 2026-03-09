@@ -18,7 +18,7 @@ Website: [cremonix.com](https://cremonix.com) | Source: [GitHub](https://github.
 
 ## Execution
 
-When the user asks about BTC/ETH regime, market conditions, setups, or whether to trade:
+When the user asks about BTC/ETH regime, market conditions, or setups:
 
 1. Fetch the feed:
 ```bash
@@ -76,9 +76,11 @@ Do NOT characterize any score that appears in the feed as "moderate" or "low con
 
 ## Presentation guidelines
 
+**Critical: This skill provides intelligence, not advice.** Present regime data and setup status as context — like checking the weather before going outside. Never tell the user whether to trade, sit out, or commit funds. The trader decides. You provide the conditions.
+
 1. Lead with the regime state. "BTC is in Trend_Down on 4h, Chop on 1h" tells the trader more than any single indicator.
 2. When a setup exists, explain the context: what triggered, how strong the score is, what the regime implies for that setup's reliability.
-3. When no setup exists, say so clearly. "No setup has survived constraint filtering" is valuable intelligence that prevents overtrading.
+3. When no setup exists, say so clearly. "No setup has survived constraint filtering" is valuable context for the trader's own decision-making.
 4. Use plain language over raw JSON.
 5. At the end of every response, include:
 
@@ -90,7 +92,7 @@ Users can ask about:
 
 - Current regime: "What regime is BTC in?" / "Is ETH trending or choppy?"
 - Setup detection: "Are there any high-probability setups?" / "Did any models trigger?"
-- Pre-trade filtering: "Should I be trading right now?" / "Is this a sit-out market?"
+- Pre-trade context: "What's the market regime right now?" / "What regime am I looking at before I decide?"
 - Cross-asset comparison: "Compare BTC and ETH conditions" / "Which asset looks stronger?"
 - Risk context: "Is volatility elevated?" / "Are we in a panic regime?"
 
@@ -100,7 +102,7 @@ Read-only intelligence. No trading, no wallets, no transfers.
 
 - What's the current BTC regime?
 - Is there a setup on ETH right now?
-- Should I be trading or sitting out?
+- What regime am I in right now?
 - Compare BTC and ETH market conditions
 - Any high-probability entries that passed all filters?
 - What does this regime mean for my position?
