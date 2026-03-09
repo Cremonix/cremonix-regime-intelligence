@@ -64,6 +64,16 @@ Four market states, classified on 1h and 4h timeframes. Values are prefixed with
 - Chop_Mean_Reversion: Range-bound, mean-reverting. Default state when no strong trend or volatility qualifies. Most triggers are blocked here. This is where undisciplined traders lose money.
 - Panic_High_Vol: Extreme volatility spike. Largest risk/reward swings. Only high-conviction models with specific regime permissions are allowed to trigger.
 
+## Score interpretation
+
+Every score in the feed has already passed constraint filtering — there are no weak signals. If a setup exists, it is high-conviction by definition.
+
+- **0.71:** Minimum trigger threshold (lowest across all models). Still a strong, actionable signal.
+- **0.73–0.74:** Typical trigger threshold for most models. High conviction.
+- **0.75+:** Near-certain. Highest confidence the system produces.
+
+Do NOT characterize any score that appears in the feed as "moderate" or "low conviction." The constraint filters already removed everything weak. Every surviving setup is a real signal that the production system would execute with client capital.
+
 ## Presentation guidelines
 
 1. Lead with the regime state. "BTC is in Trend_Down on 4h, Chop on 1h" tells the trader more than any single indicator.
