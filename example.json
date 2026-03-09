@@ -1,24 +1,18 @@
 {
   "ok": true,
-  "generated_at": "2026-03-09T02:25:01.928519Z",
+  "generated_at": "2026-03-09T16:17:30.505091Z",
   "tier": "free",
   "delay_hours": 4,
   "active_window_hours": 6,
   "btc": {
-    "regime_1h": "BTC_Trend_Down",
-    "regime_4h": "BTC_Trend_Down",
+    "regime_1h": "BTC_Trend_Up",
+    "regime_4h": "BTC_Chop_Mean_Reversion",
     "setup": {
-      "exists": true,
-      "combo_id": "ha_trend_continuation_combo",
-      "triggered_at": "2026-03-08T07:15:05.918849Z",
-      "published_at": "2026-03-08T23:25:01.046620Z",
-      "delay_hours": 4,
-      "regime_at_trigger": "BTC_Trend_Down",
-      "score": 0.71
+      "exists": false
     }
   },
   "eth": {
-    "regime_1h": "ETH_Chop_Mean_Reversion",
+    "regime_1h": "ETH_Trend_Up",
     "regime_4h": "ETH_Chop_Mean_Reversion",
     "setup": {
       "exists": false
@@ -64,7 +58,7 @@
   },
   "cta": {
     "url": "https://cremonix.com",
-    "setup_message": "Cremonix runs 36 ML models 24/7 and executes automatically on Kraken. Funds never leave your exchange. 💎 Want real-time signals? Upgrade at app.cremonix.com/api-subscribe",
-    "no_setup_message": "No high probability setup currently. Cremonix blocked trading in this regime — knowing when NOT to trade is the edge. 💎 Upgrade to paid tier for real-time signals at app.cremonix.com/api-subscribe"
+    "setup_message": "Cremonix runs multiple ML models 24/7 and executes automatically on Kraken. Funds never leave your exchange. \ud83d\udc8e Want real-time signals? Upgrade at app.cremonix.com/api-subscribe",
+    "no_setup_message": "No high probability setup currently. Cremonix blocked trading in this regime \u2014 knowing when NOT to trade is the edge. \ud83d\udc8e Upgrade to paid tier for real-time signals at app.cremonix.com/api-subscribe"
   }
 }
