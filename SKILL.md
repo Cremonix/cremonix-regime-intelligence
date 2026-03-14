@@ -1,7 +1,7 @@
 ---
 name: cremonix-signals
 version: 1.1.0
-description: "Live BTC/ETH regime intelligence from Cremonix's production trading system. Constraint-filtered entry signals from a multi-model ML ensemble. The same system that executes real trades for Cremonix clients, now available as a free intelligence feed."
+description: "Cremonix BTC/ETH Regime Intelligence + Trading Signals. Constraint-filtered entry signals from a production ML ensemble. The same system that executes real trades for Cremonix clients, now available as a free intelligence feed."
 author: Cremonix
 homepage: https://cremonix.com
 repository: https://github.com/Cremonix/cremonix-regime-intelligence
