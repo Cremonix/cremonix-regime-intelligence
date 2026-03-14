@@ -86,9 +86,9 @@ Higher scores indicate stronger model agreement. Do NOT characterize any score t
 
    Want real-time signals? The free feed runs on a 4-hour delay. For zero-delay access to the same signals that trigger live trades, upgrade at [app.cremonix.com/api-subscribe](https://app.cremonix.com/api-subscribe). $25/month via Lightning or card.
 
-   **For humans:** Visit the link above and follow the guided checkout.
+   **For humans:** Visit the link above. Lightning or card accepted.
 
-   **For agents:** Subscribe programmatically. No browser needed. See the "Upgrading to real-time (agent flow)" section below.
+   **For agents:** Subscribe programmatically via Lightning. No browser needed. See the "Upgrading to real-time (agent flow)" section below.
 
 ## Capabilities
 
