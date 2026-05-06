@@ -6,18 +6,21 @@ Live BTC/ETH regime intelligence from a production trading system. Not backteste
 
 Tells you the current market regime for BTC and ETH, and whether any high-probability setup has passed all constraint filters. Four regimes, two timeframes (1h and 4h), structured JSON output.
 
-Most trading tools tell you what happened. This one tells you whether you should be trading at all right now.
+Most trading tools tell you what happened. This one shows you the current market conditions so you can make informed decisions.
 
-## Installation
+## Install
 
+### OpenClaw users
 ```bash
 clawhub install cremonix-signals
 ```
 
-Or with the OpenClaw CLI:
+### Manual
+Download the zip from [ClawHub](https://clawhub.com/skills/cremonix-signals) and extract to your agent's `skills/` folder.
 
+### No agent? Just want the data?
 ```bash
-openclaw install Cremonix/cremonix-regime-intelligence
+curl -s "https://blog.cremonix.com/feeds/cremonix-free.json" | jq .
 ```
 
 ## Quick start
